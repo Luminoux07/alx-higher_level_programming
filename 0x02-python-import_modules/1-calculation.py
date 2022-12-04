@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-if __name__ == '__main__':
+if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     a = 10
     b = 5
-    funcs = [('+', add), ('-', sub), ('*', mul), ('/', div)]
-    for func in funcs:
-        print('{:d} {:s} {:d} = {:d}'.format(a, func[0], b, func[1](a, b)))
+    print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
+    print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
+    print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
+    print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
